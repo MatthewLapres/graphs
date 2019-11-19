@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 10, 100) #
+
+plt.plot(x, np.sin(x), label='object A')
+
+plt.plot(x, 300 + (-9.81*(x**2)), label='Object B')
+
+plt.plot(x, x**3, label='object C')
+
+plt.xlabel('Time(seconds)')
+plt.ylabel('Height(Meters)')
+
+plt.title("Sample Plot")
+
+plt.legend()
+
+plt.show()
